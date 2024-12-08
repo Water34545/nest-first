@@ -3,9 +3,24 @@ POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-  "email": "wesf@tes.ry",
+  "email": "wesf5@tes.ry",
   "password": "test"
 }
+
+###login
+POST http://localhost:3000/auth/signin
+content-type: application/json
+
+{
+  "email": "wesf5@tes.ry",
+  "password": "test"
+}
+
+###who am i
+GET http://localhost:3000/auth/whoami
+
+###signout
+POST http://localhost:3000/auth/signout
 
 ###Find by id
 GET http://localhost:3000/auth/1
