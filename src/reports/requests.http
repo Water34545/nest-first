@@ -1,0 +1,24 @@
+### Create new report
+POST http://localhost:3000/reports
+content-type: application/json
+
+{
+  "make": "Renault",
+  "model": "Some",
+  "year": 1995,
+  "lng": 0,
+  "lat": 0,
+  "price": 999,
+  "millage": 100000
+}
+
+### Update report 3
+PATCH http://localhost:3000/reports/5
+content-type: application/json
+
+{
+  "approved": true
+}
+
+### Get an estimate for an existing vehicle
+GET http://localhost:3000/reports?make=Renault&model=Logan&lng=0&lat=0&millage=100000&year=1995
