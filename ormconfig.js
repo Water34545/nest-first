@@ -20,7 +20,7 @@ switch (process.env.NODE_ENV) {
     Object.assign(dbOptions, {
       type: 'sqlite',
       database: 'test.sqlite',
-      entities: ['**/*.entity.ts'],
+      entities: ['dist/**/*.entity.js'],
       migrationsRun: true,
     });
     break;
